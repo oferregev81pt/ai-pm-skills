@@ -1,0 +1,7 @@
+{
+  "name": "idea-to-mvp",
+  "version": "0.1.0",
+  "description": "Walk a product idea from raw thought to a lean MVP requirements doc (PRD) using product-sense best practices: Customer/Users First, use cases before features, ruthless prioritization, validation.",
+  "author": { "name": "Ofer Regev" },
+  "keywords": ["product-management", "pm", "prd", "mvp", "product-sense", "requirements"]
+}

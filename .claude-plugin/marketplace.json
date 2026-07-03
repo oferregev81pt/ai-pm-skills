@@ -1,0 +1,11 @@
+{
+  "name": "ai-pm-skills",
+  "owner": { "name": "Ofer Regev" },
+  "plugins": [
+    {
+      "name": "idea-to-mvp",
+      "source": ".",
+      "description": "Idea → users → use cases → alternatives → solutions → MVP cut → validation → lean PRD. Interactive product-sense flow for PMs."
+    }
+  ]
+}
