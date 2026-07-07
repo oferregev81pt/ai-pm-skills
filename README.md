@@ -32,14 +32,14 @@ orchestrator, or jump into any step on its own.
 ### Claude Code / Claude Cowork
 
 ```
-/plugin marketplace add oferregev/ai-pm-skills
+/plugin marketplace add oferregev81pt/ai-pm-skills
 /plugin install idea-to-mvp@ai-pm-skills
 ```
 
 ### Cursor and other Agent Skills-compatible tools
 
 ```
-npx skills add oferregev/ai-pm-skills
+npx skills add oferregev81pt/ai-pm-skills
 ```
 
 Or copy the `skills/` folders into your tool's skills directory (e.g.
