@@ -45,8 +45,11 @@ Iterate until approved.
 
 ## Explicitly out (v1)
 …
+
+## Open questions
+<unresolved items from this step — pm-prd collects these; write "none" if none>
 ```
 
-Append to `00-status.md`: `- [x] pm-users → 02-users.md — <one-liner> (<date>)`
+Append to `00-status.md`: `- [x] pm-users → 02-users.md — <one-liner> (<YYYY-MM-DD>)`
 
 **Next:** use cases & pain points — pm-use-cases.

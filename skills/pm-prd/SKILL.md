@@ -21,9 +21,9 @@ missing steps from chat memory.
 Assemble a 1–3 page lean PRD from the docs, in this structure:
 
 ```
-# PRD — <idea title>  (v0.1, <date>)
+# PRD — <idea title>  (v0.1, <YYYY-MM-DD>)
 
-## Problem
+## Problem                           ← from 01
 ## Target users & customers          ← from 02
 ## Use cases (prioritized)           ← from 03
 ## Today's alternatives & our wedge  ← from 04 (or "not researched")
@@ -33,7 +33,7 @@ Assemble a 1–3 page lean PRD from the docs, in this structure:
 ### Out (LATER / WON'T)
 ## Success metrics                   ← from 07
 ## Risks & assumptions               ← from 07
-## Open questions                    ← unresolved items from any step
+## Open questions                    ← the Open questions sections of 01–07
 ```
 
 Tight prose, tables where they're clearer, no marketing fluff. Written so an
@@ -51,7 +51,7 @@ Iterate until approved.
 ## Output
 
 Save to `product/<idea-slug>/08-prd.md`. Append to `00-status.md`:
-`- [x] pm-prd → 08-prd.md — PRD complete (<date>)`
+`- [x] pm-prd → 08-prd.md — PRD complete (<YYYY-MM-DD>)`
 
 Wrap up in chat in 3–4 sentences max: where the PRD lives, and suggested next
 moves (hand to Claude Code/Cursor to build; share with stakeholders). The

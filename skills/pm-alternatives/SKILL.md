@@ -22,6 +22,9 @@ or accept an equivalent doc. Never reconstruct prior steps from chat memory.
   cases. Every claim gets a source or a `[assumption]` tag.
 - No web search (or PM declines) → draft purely from the PM's knowledge and
   the intake doc; tag EVERY market claim `[assumption]`.
+- Declining web research is NOT skipping the step: the step still runs and
+  produces `04-alternatives.md`, just knowledge-only. Skipping means the PM
+  chose not to discuss alternatives at all.
 
 ## Drafting instructions (dispatch to a subagent when available, else inline)
 
@@ -48,9 +51,14 @@ Iterate until approved.
 
 ## Our wedge
 …and why it's defensible enough for an MVP
+
+## Open questions
+<unresolved items from this step — pm-prd collects these; write "none" if none>
 ```
 
-Append to `00-status.md`: `- [x] pm-alternatives → 04-alternatives.md — <one-liner> (<date>)`
-(If the PM skips this step, record: `- [ ] pm-alternatives — skipped by PM (<date>)`)
+Append to `00-status.md`: `- [x] pm-alternatives → 04-alternatives.md — <one-liner> (<YYYY-MM-DD>)`
+(If the PM skips this step, record it CHECKED so resume logic treats the flow
+as progressing: `- [x] pm-alternatives — skipped by PM (<YYYY-MM-DD>)`; the
+PRD's alternatives section then reads "not researched".)
 
 **Next:** solution directions — pm-solutions.

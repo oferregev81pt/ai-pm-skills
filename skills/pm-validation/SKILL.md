@@ -46,8 +46,14 @@ Iterate until approved.
 
 ## Riskiest assumptions
 <per assumption: what must be true | how MVP tests it | kill/pivot threshold>
+
+## Measurement note
+<how each metric is captured given the MUST feature set>
+
+## Open questions
+<unresolved items from this step — pm-prd collects these; write "none" if none>
 ```
 
-Append to `00-status.md`: `- [x] pm-validation → 07-validation.md — <one-liner> (<date>)`
+Append to `00-status.md`: `- [x] pm-validation → 07-validation.md — <one-liner> (<YYYY-MM-DD>)`
 
 **Next:** assemble the PRD — pm-prd.

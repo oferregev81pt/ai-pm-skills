@@ -50,8 +50,11 @@ Iterate until approved.
 
 ## End-to-end check
 <the #1 use case walked step-by-step through MUST features only>
+
+## Open questions
+<unresolved items from this step — pm-prd collects these; write "none" if none>
 ```
 
-Append to `00-status.md`: `- [x] pm-mvp-cut → 06-mvp-scope.md — <one-liner> (<date>)`
+Append to `00-status.md`: `- [x] pm-mvp-cut → 06-mvp-scope.md — <one-liner> (<YYYY-MM-DD>)`
 
 **Next:** metrics & riskiest assumptions — pm-validation.

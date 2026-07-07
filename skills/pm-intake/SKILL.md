@@ -40,6 +40,6 @@ features yet — if the PM lists features, note them under Parking Lot.
 **Open questions:** …
 ```
 
-Append to `00-status.md`: `- [x] pm-intake → 01-intake.md — <one-liner> (<date>)`
+Append to `00-status.md`: `- [x] pm-intake → 01-intake.md — <one-liner> (<YYYY-MM-DD>)`
 
 **Next:** identify users & customers — pm-users.

@@ -42,8 +42,11 @@ Iterate until approved.
 
 ## Cut (considered, rejected — and why)
 …
+
+## Open questions
+<unresolved items from this step — pm-prd collects these; write "none" if none>
 ```
 
-Append to `00-status.md`: `- [x] pm-use-cases → 03-use-cases.md — <one-liner> (<date>)`
+Append to `00-status.md`: `- [x] pm-use-cases → 03-use-cases.md — <one-liner> (<YYYY-MM-DD>)`
 
 **Next:** how the world solves this today — pm-alternatives (skippable but recommended).
