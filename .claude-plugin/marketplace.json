@@ -6,6 +6,11 @@
       "name": "idea-to-mvp",
       "source": ".",
       "description": "Idea → users → use cases → alternatives → solutions → MVP cut → validation → lean PRD. Interactive product-sense flow for PMs."
+    },
+    {
+      "name": "roadmap-rice",
+      "source": "./plugins/roadmap-rice",
+      "description": "Turn an existing codebase into a prioritized roadmap: candidate features from the code, plain-language questions, RICE scores, ranked table and Now/Next/Later build order."
     }
   ]
 }

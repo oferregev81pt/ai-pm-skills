@@ -1,4 +1,22 @@
-# ai-pm-skills — Idea to MVP for Product Managers
+# ai-pm-skills — PM skills for AI coding agents
+
+A small marketplace of product-management skills for Claude Code, Claude
+Cowork, Cursor, and other Agent Skills-compatible tools.
+
+| Plugin | What it does |
+|--------|--------------|
+| **idea-to-mvp** | Raw idea → lean MVP requirements doc (PRD), in 8 interactive steps |
+| **roadmap-rice** | Existing codebase → RICE-scored, ranked roadmap with a Now/Next/Later build order |
+
+Install the marketplace once, then install whichever plugins you want:
+
+```
+/plugin marketplace add oferregev81pt/ai-pm-skills
+```
+
+---
+
+## idea-to-mvp
 
 Turn a raw product idea into a lean, build-ready MVP requirements doc (PRD)
 through an interactive, product-sense-driven flow. Built on the frameworks in
@@ -10,7 +28,7 @@ You stay the decision-maker. At every step the AI drafts, you react and
 approve. Every step is saved as a doc, so the flow is resumable, auditable,
 and never depends on chat memory.
 
-## The flow
+### The flow
 
 | # | Step | Question it answers | Output |
 |---|------|---------------------|--------|
@@ -27,25 +45,13 @@ All docs land in `product/<idea-slug>/` in your workspace, plus a
 `00-status.md` index. Run the whole journey with the **idea-to-mvp**
 orchestrator, or jump into any step on its own.
 
-## Install
-
-### Claude Code / Claude Cowork
+### Install
 
 ```
-/plugin marketplace add oferregev81pt/ai-pm-skills
 /plugin install idea-to-mvp@ai-pm-skills
 ```
 
-### Cursor and other Agent Skills-compatible tools
-
-```
-npx skills add oferregev81pt/ai-pm-skills
-```
-
-Or copy the `skills/` folders into your tool's skills directory (e.g.
-`.cursor/skills/` or `.agents/skills/` in your project).
-
-## Usage
+### Usage
 
 Start a conversation with your idea:
 
@@ -63,13 +69,66 @@ stakeholders.
 Resume any time — the agent picks up from `00-status.md`. Already did user
 research elsewhere? Hand the agent your doc and it replaces that step.
 
-## Notes
+### Notes
 
 - Works fully offline: the alternatives step offers web research when the
   tool supports it, and falls back to your knowledge (with claims tagged
   `[assumption]`) when it doesn't.
 - In tools with subagents (Claude Code), drafting is dispatched to subagents
   to keep your conversation context clean; elsewhere it runs inline.
+
+---
+
+## roadmap-rice
+
+You can build almost anything you think of now — the hard part is choosing
+what to build next. Point this at a real project and it produces a defensible,
+ranked roadmap.
+
+1. **Reads the codebase** — README, docs, CHANGELOG, git log, TODOs, open
+   issues, and the actual route/model/endpoint structure — to tell what's
+   shipped from what's half-built or merely talked about.
+2. **Gets your sign-off on the candidate list** before scoring anything, so
+   you never end up prioritizing ideas nobody cares about.
+3. **Asks plain-language questions** — who does this help, what changes for
+   them, how sure are you — and translates the answers into RICE numbers
+   itself. No jargon or spreadsheets on your side. Effort is drafted from the
+   code first, then corrected by you.
+4. **Writes the roadmap doc** — ranked table with scores, a one-line rationale
+   per feature grounded in your own answers, callouts on the non-obvious
+   ranking decisions, and a dependency-aware Now/Next/Later build order.
+
+### Install
+
+```
+/plugin install roadmap-rice@ai-pm-skills
+```
+
+### Usage
+
+> **You:** I've got a pile of ideas for this repo and no idea which to do first.
+>
+> **Agent:** Let me read the project first, then I'll come back with a candidate
+> list for you to approve before we score anything.
+
+Works on any existing project — run it from the repo root, or point it at a
+path.
+
+---
+
+## Other tools
+
+### Cursor and other Agent Skills-compatible tools
+
+```
+npx skills add oferregev81pt/ai-pm-skills
+```
+
+Or copy the skill folders into your tool's skills directory (e.g.
+`.cursor/skills/` or `.agents/skills/` in your project):
+
+- idea-to-mvp steps: `skills/`
+- roadmap-rice: `plugins/roadmap-rice/skills/`
 
 ## Credits & license
 
