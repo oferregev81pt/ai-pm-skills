@@ -1,5 +1,7 @@
 # Scoring guide and output template
 
+If `product/<project-slug>/ideation.md` exists, some approved candidates will have originated there rather than from the codebase. Keep that provenance visible in the rationale ("came from the ideation pass, not yet validated with users") — it's directly relevant to how much weight to put on their Confidence score.
+
 ## Translating plain-language answers into RICE numbers
 
 Use a 1–10 scale for Reach, Impact, and Confidence, and a 1–10 scale for Effort where higher = more work. Score = (Reach × Impact × Confidence) ÷ Effort.
@@ -47,6 +49,8 @@ Higher score = higher priority. Round to one decimal place for the table so it's
 ## Output document structure
 
 Use this structure for the final roadmap markdown file. Fill in every section — don't skip the rationale or grouping to save time, they're the point of the exercise.
+
+Save to `product/<project-slug>/roadmap.md`. Append to `product/<project-slug>/00-status.md` if one exists: `- [x] roadmap-rice-prioritizer → roadmap.md — <one-liner> (<YYYY-MM-DD>)`.
 
 ```markdown
 # [Project name] — Prioritized Roadmap

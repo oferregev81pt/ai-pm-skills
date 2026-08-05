@@ -10,7 +10,7 @@
     {
       "name": "roadmap-rice",
       "source": "./plugins/roadmap-rice",
-      "description": "Turn an existing codebase into a prioritized roadmap: candidate features from the code, plain-language questions, RICE scores, ranked table and Now/Next/Later build order."
+      "description": "Turn an existing codebase into a prioritized roadmap: candidate features from the code, fresh opportunities from structured ideation, plain-language questions, RICE scores, ranked table and Now/Next/Later build order."
     }
   ]
 }

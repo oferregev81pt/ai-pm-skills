@@ -1,7 +1,7 @@
 {
   "name": "roadmap-rice",
   "version": "0.1.0",
-  "description": "Read an existing codebase, agree on a candidate feature list, then RICE-score it into a ranked roadmap with rationale and a Now/Next/Later build order.",
+  "description": "Read an existing codebase, generate fresh opportunity ideas (JTBD framing, How Might We, SCAMPER) alongside the candidates already hinted at in code and docs, agree on the combined list, then RICE-score it into a ranked roadmap with rationale and a Now/Next/Later build order.",
   "author": { "name": "Ofer Regev" },
-  "keywords": ["product-management", "pm", "roadmap", "prioritization", "rice", "backlog"]
+  "keywords": ["product-management", "pm", "roadmap", "prioritization", "rice", "backlog", "ideation"]
 }

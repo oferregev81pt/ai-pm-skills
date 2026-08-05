@@ -83,20 +83,27 @@ research elsewhere? Hand the agent your doc and it replaces that step.
 
 You can build almost anything you think of now — the hard part is choosing
 what to build next. Point this at a real project and it produces a defensible,
-ranked roadmap.
+ranked roadmap, including ideas nobody had written down yet.
 
 1. **Reads the codebase** — README, docs, CHANGELOG, git log, TODOs, open
    issues, and the actual route/model/endpoint structure — to tell what's
    shipped from what's half-built or merely talked about.
-2. **Gets your sign-off on the candidate list** before scoring anything, so
-   you never end up prioritizing ideas nobody cares about.
-3. **Asks plain-language questions** — who does this help, what changes for
+2. **Generates fresh opportunities** — infers your users and the job(s) they
+   hire the product for, reframes friction it noticed as "How Might We"
+   prompts, runs a SCAMPER pass on your core shipped features, then cuts the
+   raw ideas down to a shortlist. Saved to `product/<slug>/ideation.md`.
+3. **Gets your sign-off on the combined candidate list** — harvested from the
+   code plus freshly generated — before scoring anything, so you never end up
+   prioritizing ideas nobody cares about, and never mistake a new idea for
+   already-planned work.
+4. **Asks plain-language questions** — who does this help, what changes for
    them, how sure are you — and translates the answers into RICE numbers
    itself. No jargon or spreadsheets on your side. Effort is drafted from the
    code first, then corrected by you.
-4. **Writes the roadmap doc** — ranked table with scores, a one-line rationale
+5. **Writes the roadmap doc** — ranked table with scores, a one-line rationale
    per feature grounded in your own answers, callouts on the non-obvious
    ranking decisions, and a dependency-aware Now/Next/Later build order.
+   Saved to `product/<slug>/roadmap.md`.
 
 ### Install
 
