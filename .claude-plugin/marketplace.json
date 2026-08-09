@@ -8,9 +8,9 @@
       "description": "Idea → users → use cases → alternatives → solutions → MVP cut → validation → lean PRD. Interactive product-sense flow for PMs."
     },
     {
-      "name": "roadmap-rice",
-      "source": "./plugins/roadmap-rice",
-      "description": "Turn an existing codebase into a prioritized roadmap: candidate features from the code, fresh opportunities from structured ideation, plain-language questions, RICE scores, ranked table and Now/Next/Later build order."
+      "name": "roadmap-prioritizer",
+      "source": "./plugins/roadmap-prioritizer",
+      "description": "Turn an existing codebase into a prioritized roadmap: status per feature from the code, fresh opportunities from structured ideation, a prioritization model chosen to fit the situation (RICE, MoSCoW, Now/Next/Later or Kano), and an interactive scoring conversation in plain language."
     }
   ]
 }

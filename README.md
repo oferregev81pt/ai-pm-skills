@@ -6,7 +6,7 @@ Cowork, Cursor, and other Agent Skills-compatible tools.
 | Plugin | What it does |
 |--------|--------------|
 | **idea-to-mvp** | Raw idea → lean MVP requirements doc (PRD), in 8 interactive steps |
-| **roadmap-rice** | Existing codebase → RICE-scored, ranked roadmap with a Now/Next/Later build order |
+| **roadmap-prioritizer** | Existing codebase → ideation, a fitting prioritization model (RICE / MoSCoW / Now-Next-Later / Kano), and a roadmap with status and priority per feature |
 
 Install the marketplace once, then install whichever plugins you want:
 
@@ -79,36 +79,40 @@ research elsewhere? Hand the agent your doc and it replaces that step.
 
 ---
 
-## roadmap-rice
+## roadmap-prioritizer
 
 You can build almost anything you think of now — the hard part is choosing
-what to build next. Point this at a real project and it produces a defensible,
-ranked roadmap, including ideas nobody had written down yet.
+what to build next. Point this at a real project and it produces a defensible
+roadmap, including ideas nobody had written down yet.
 
 1. **Reads the codebase** — README, docs, CHANGELOG, git log, TODOs, open
-   issues, and the actual route/model/endpoint structure — to tell what's
-   shipped from what's half-built or merely talked about.
+   issues, and the actual route/model/endpoint structure — and assigns every
+   feature a status: shipped, in progress, planned, or new idea.
 2. **Generates fresh opportunities** — infers your users and the job(s) they
-   hire the product for, reframes friction it noticed as "How Might We"
-   prompts, runs a SCAMPER pass on your core shipped features, then cuts the
-   raw ideas down to a shortlist. Saved to `product/<slug>/ideation.md`.
+   hire the product for, sweeps both what users asked for and what only you
+   would notice, reframes friction as "How Might We" prompts, runs a SCAMPER
+   pass on your core features, and plots everything on a value/risk grid so
+   the money pits get cut early. Saved to `product/<slug>/ideation.md`.
 3. **Gets your sign-off on the combined candidate list** — harvested from the
-   code plus freshly generated — before scoring anything, so you never end up
-   prioritizing ideas nobody cares about, and never mistake a new idea for
+   code plus freshly generated — before prioritizing anything, so you never
+   end up ranking ideas nobody cares about, and never mistake a new idea for
    already-planned work.
-4. **Asks plain-language questions** — who does this help, what changes for
-   them, how sure are you — and translates the answers into RICE numbers
-   itself. No jargon or spreadsheets on your side. Effort is drafted from the
-   code first, then corrected by you.
-5. **Writes the roadmap doc** — ranked table with scores, a one-line rationale
-   per feature grounded in your own answers, callouts on the non-obvious
-   ranking decisions, and a dependency-aware Now/Next/Later build order.
-   Saved to `product/<slug>/roadmap.md`.
+4. **Picks the prioritization model that fits** — RICE, MoSCoW, Now/Next/Later
+   or Kano — instead of defaulting to one. Under ten ideas with no usage data,
+   scoring math just dresses up guesses as numbers, and it says so. You get one
+   recommendation with the reasoning, and the final call.
+5. **Runs it as a conversation** — who does this help, what changes for them,
+   what would you delay the release for — and does the translation into scores
+   or buckets itself. No jargon or spreadsheets on your side. Effort is drafted
+   from the code first, then corrected by you.
+6. **Writes the roadmap doc** — status *and* priority per feature, a one-line
+   rationale grounded in your own answers, callouts on the non-obvious calls,
+   and a dependency-aware build order. Saved to `product/<slug>/roadmap.md`.
 
 ### Install
 
 ```
-/plugin install roadmap-rice@ai-pm-skills
+/plugin install roadmap-prioritizer@ai-pm-skills
 ```
 
 ### Usage
@@ -116,7 +120,8 @@ ranked roadmap, including ideas nobody had written down yet.
 > **You:** I've got a pile of ideas for this repo and no idea which to do first.
 >
 > **Agent:** Let me read the project first, then I'll come back with a candidate
-> list for you to approve before we score anything.
+> list for you to approve — and a recommendation on which prioritization model
+> actually fits what you're sorting.
 
 Works on any existing project — run it from the repo root, or point it at a
 path.
@@ -135,7 +140,7 @@ Or copy the skill folders into your tool's skills directory (e.g.
 `.cursor/skills/` or `.agents/skills/` in your project):
 
 - idea-to-mvp steps: `skills/`
-- roadmap-rice: `plugins/roadmap-rice/skills/`
+- roadmap-prioritizer: `plugins/roadmap-prioritizer/skills/`
 
 ## Credits & license
 

@@ -2,7 +2,23 @@
 
 Step 1 tells you what's shipped and what's already flagged as unfinished. This step generates what's neither — ideas nobody has written down anywhere in the repo. You don't have access to live customer interviews here, so these techniques are adapted to work from the evidence a codebase and its docs actually provide: shipped behavior, README/doc framing, issue history, and structure.
 
-Work through the four passes below in order. Each builds on the last.
+Work through the passes below in order. Each builds on the last.
+
+## 0. Sweep both kinds of source
+
+Ideas aren't just user requests. Before generating anything, make sure you've looked at both halves — most backlogs are lopsidedly reactive, and the proactive half is where the non-obvious ideas live.
+
+**Reactive — what users tell you**
+- Direct feature requests (issues, discussions, README "wishlist" sections)
+- Support tickets and bug reports
+- "It would be great if…" comments in code, docs, or issue threads
+
+**Proactive — what you notice**
+- Where people drop off (incomplete flows, error-heavy paths, abandoned code branches)
+- Gaps an adjacent product category fills and this one doesn't
+- Your own read as a builder using the product
+
+If the repo has no issue tracker or user-facing feedback at all, say so rather than pretending the reactive half was covered — and lean harder on the proactive passes below.
 
 ## 1. Infer users and jobs (grounds everything after it)
 
@@ -33,9 +49,28 @@ Pick the 2-4 features that seem most central to the product's core job (from ste
 
 This pass tends to surface extension and adjacent-market ideas rather than gap-fixes — a useful counterweight to the HMW pass, which is mostly about fixing friction.
 
-## 4. Cut to a shortlist before showing the user
+## 4. Plot value vs. risk
+
+Before cutting, place each surviving idea on a 2×2 — value (low → high) against risk (low → high, where risk covers both "might not work" and "might cost far more than it looks"). Four quadrants, four different responses:
+
+| Quadrant | Value / Risk | What it means |
+| --- | --- | --- |
+| **Quick Wins** | High / Low | Do these first — cheap and clearly worth it |
+| **Big Bets** | High / High | Worth the gamble, but test cheaply before committing weeks |
+| **Fill-ins** | Low / Low | Nice, not urgent — whenever there's slack |
+| **Money Pits** | Low / High | Cut these; expensive and not clearly wanted |
+
+This is not the prioritization step — that's Step 4, using whichever model gets chosen. It's a sanity filter: it catches the expensive-but-unwanted idea before anyone spends questions on it, and it gives the Now/Next/Later model (if chosen) a natural starting shape.
+
+Note the quadrant per idea in the doc. When something lands in Money Pits, still list it under "considered and dropped" with the reason — a reader wants to see that the exciting-sounding idea was weighed, not overlooked.
+
+For any Big Bet that survives, note the cheapest test that would settle it: the one flow that answers "do people care," with every edge case and setting cut. Days, not weeks. That test is often a better roadmap item than the full feature.
+
+## 5. Cut to a shortlist before showing the user
 
 You'll typically end up with 10-20 raw ideas across steps 2 and 3. Don't hand all of them to the user unfiltered. Do one pass yourself:
+
+- Drop anything sitting in Money Pits.
 
 - Drop near-duplicates and merge overlapping ideas.
 - Drop anything that doesn't map to a real user/job from step 1 — an idea with no clear "who benefits" is noise, not a candidate.
@@ -67,16 +102,24 @@ candidate list before treating any of these as already-planned.
 - **[Feature]** — [substitute/combine/adapt/modify/other-use/eliminate/reverse]: [resulting idea]
 - (one line per idea that produced something worth keeping)
 
+## Value vs. risk
+
+- **Quick Wins** (high value, low risk) — [ideas]
+- **Big Bets** (high value, high risk) — [idea] · cheapest test: [one flow, days not weeks]
+- **Fill-ins** (low value, low risk) — [ideas]
+- **Money Pits** (low value, high risk) — [ideas, all dropped below]
+
 ## Shortlist carried forward
 
-| Idea | Source | Who it helps | Why it made the cut |
-| --- | --- | --- | --- |
-| [Idea] | HMW / SCAMPER / persona gap | [segment] | [one line] |
+| Idea | Source | Quadrant | Who it helps | Why it made the cut |
+| --- | --- | --- | --- | --- |
+| [Idea] | HMW / SCAMPER / persona gap | Quick Win / Big Bet / Fill-in | [segment] | [one line] |
 
 ## Ideas considered and dropped
 
-[1-2 lines on what got cut in the merge/dedupe pass and why — keeps the
-process auditable without cluttering the shortlist.]
+[1-2 lines on what got cut in the merge/dedupe pass and why, plus anything
+that landed in Money Pits — keeps the process auditable without cluttering
+the shortlist.]
 ```
 
 Append to `product/<project-slug>/00-status.md` if one exists (create it if this is the first doc in the folder): `- [x] ideation → ideation.md — <one-liner> (<YYYY-MM-DD>)`.

@@ -1,0 +1,7 @@
+{
+  "name": "roadmap-prioritizer",
+  "version": "0.2.0",
+  "description": "Read an existing codebase, generate fresh opportunity ideas (JTBD framing, How Might We, SCAMPER, value/risk grid) alongside the candidates already hinted at in code and docs, agree on the combined list, then pick the prioritization model that actually fits — RICE, MoSCoW, Now/Next/Later or Kano — and run it as an interactive conversation into a roadmap with status and priority per feature.",
+  "author": { "name": "Ofer Regev" },
+  "keywords": ["product-management", "pm", "roadmap", "prioritization", "rice", "moscow", "kano", "backlog", "ideation"]
+}
