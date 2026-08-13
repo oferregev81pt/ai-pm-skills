@@ -76,7 +76,8 @@ Start a conversation with your idea:
 Answer the questions (short answers are fine — the flow is what matters),
 react to each draft, and after step 8 you'll have `product/<your-idea>/08-prd.md`
 ready to hand to Claude Code or Cursor to build, or to share with
-stakeholders.
+stakeholders. At that point the agent will also ask if you want to run the
+optional Lean PMF search (steps 9–11) before you build.
 
 Resume any time — the agent picks up from `00-status.md`. Already did user
 research elsewhere? Hand the agent your doc and it replaces that step.
