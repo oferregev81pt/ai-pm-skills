@@ -5,7 +5,7 @@
     {
       "name": "idea-to-mvp",
       "source": ".",
-      "description": "Idea → users → use cases → alternatives → solutions → MVP cut → validation → lean PRD. Interactive product-sense flow for PMs."
+      "description": "Idea → users → use cases → alternatives → solutions → MVP cut → validation → lean PRD, then an optional Lean PMF search (canvas → customer discovery → PMF signal). Interactive product-sense flow for PMs."
     },
     {
       "name": "roadmap-prioritizer",

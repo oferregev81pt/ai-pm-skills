@@ -1,6 +1,6 @@
 ---
 name: pm-prd
-description: Use when assembling a final lean PRD / MVP requirements doc from completed discovery docs, or when a PM asks to "write the PRD" after idea-to-mvp steps (product/<slug>/ docs 01–07 exist, fully or partly). Step 8, final, of the idea-to-mvp flow.
+description: Use when assembling a final lean PRD / MVP requirements doc from completed discovery docs, or when a PM asks to "write the PRD" after idea-to-mvp steps (product/<slug>/ docs 01–07 exist, fully or partly). Step 8 of the idea-to-mvp flow — core steps end here; an optional Lean PMF search (steps 9–11) can follow.
 ---
 
 # Step 8 — The Lean PRD
@@ -53,6 +53,15 @@ Iterate until approved.
 Save to `product/<idea-slug>/08-prd.md`. Append to `00-status.md`:
 `- [x] pm-prd → 08-prd.md — PRD complete (<YYYY-MM-DD>)`
 
-Wrap up in chat in 3–4 sentences max: where the PRD lives, and suggested next
-moves (hand to Claude Code/Cursor to build; share with stakeholders). The
-detail lives in the doc.
+Wrap up in chat in 2–3 sentences: where the PRD lives. Then ask, as its own
+question: "Want to run a Lean PMF search next — 3 short steps (Lean Canvas,
+Customer Discovery, PMF Signal) — to validate this against real customers
+before you build?"
+
+- **Yes** → proceed directly to pm-lean-canvas. No status line to add here —
+  pm-lean-canvas appends its own `[x]` line on completion, the same as every
+  other step; there's no pending/unchecked line convention in this file.
+- **No** → append `- [x] Lean PMF search declined — proceeded straight to
+  build (<YYYY-MM-DD>)` to `00-status.md` (so a later resume can still offer
+  it), and suggest next moves: hand the PRD to Claude Code/Cursor to build,
+  or share with stakeholders.

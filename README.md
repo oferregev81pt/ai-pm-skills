@@ -5,7 +5,7 @@ Cowork, Cursor, and other Agent Skills-compatible tools.
 
 | Plugin | What it does |
 |--------|--------------|
-| **idea-to-mvp** | Raw idea → lean MVP requirements doc (PRD), in 8 interactive steps |
+| **idea-to-mvp** | Raw idea → lean MVP requirements doc (PRD), in 8 interactive steps, plus an optional 3-step Lean PMF search |
 | **roadmap-prioritizer** | Existing codebase → ideation, a fitting prioritization model (RICE / MoSCoW / Now-Next-Later / Kano), and a roadmap with status and priority per feature |
 
 Install the marketplace once, then install whichever plugins you want:
@@ -41,6 +41,18 @@ and never depends on chat memory.
 | 7 | `pm-validation` | How will we know it worked — and what would kill it? | `07-validation.md` |
 | 8 | `pm-prd` | The lean PRD, assembled from everything above | `08-prd.md` |
 
+**Optional Lean PMF search** — offered once, at step 8's wrap-up:
+
+| # | Step | Question it answers | Output |
+|---|------|---------------------|--------|
+| 9 | `pm-lean-canvas` | What's the full business model — channels, revenue, cost, key metrics, unfair advantage? | `09-lean-canvas.md` |
+| 10 | `pm-customer-discovery` | What do real customers say when we test the problem and solution? | `10-customer-discovery.md` |
+| 11 | `pm-pmf-signal` | How will we know we've reached PMF, and what's the go/no-go threshold? | `11-pmf-signal.md` |
+
+Step 10 runs in two passes: it drafts the interview guide first, then — once
+you've actually gone and talked to customers, possibly in a later session —
+synthesizes the notes you bring back.
+
 All docs land in `product/<idea-slug>/` in your workspace, plus a
 `00-status.md` index. Run the whole journey with the **idea-to-mvp**
 orchestrator, or jump into any step on its own.
@@ -64,7 +76,8 @@ Start a conversation with your idea:
 Answer the questions (short answers are fine — the flow is what matters),
 react to each draft, and after step 8 you'll have `product/<your-idea>/08-prd.md`
 ready to hand to Claude Code or Cursor to build, or to share with
-stakeholders.
+stakeholders. At that point the agent will also ask if you want to run the
+optional Lean PMF search (steps 9–11) before you build.
 
 Resume any time — the agent picks up from `00-status.md`. Already did user
 research elsewhere? Hand the agent your doc and it replaces that step.
