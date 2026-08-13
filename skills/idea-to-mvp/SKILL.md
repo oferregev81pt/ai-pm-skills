@@ -27,7 +27,7 @@ the status file and move on.
      a short kebab-case slug, confirm it, and begin step 1.
 2. Announce the map once: the 8 steps below and the doc each produces.
 
-## The 8 steps
+## The 8 core steps + optional Lean PMF search
 
 Run in order. For each: invoke the step skill (Skill tool where available;
 otherwise open `skills/<name>/SKILL.md` in this plugin and follow it).
@@ -43,6 +43,17 @@ otherwise open `skills/<name>/SKILL.md` in this plugin and follow it).
 | 7 | pm-validation | 07-validation.md |
 | 8 | pm-prd | 08-prd.md |
 
+**Lean PMF search (optional, opted into as a block at step 8's wrap-up):**
+
+| # | Skill | Doc |
+|---|-------|-----|
+| 9 | pm-lean-canvas | 09-lean-canvas.md |
+| 10 | pm-customer-discovery | 10-customer-discovery.md |
+| 11 | pm-pmf-signal | 11-pmf-signal.md |
+
+Unlike step 4, steps 9–11 are not individually skippable once opted into —
+the PM decides once, at step 8, whether to run the block at all.
+
 ## Context hygiene
 
 - Between steps, carry forward ONLY the status file — each step skill
@@ -54,6 +65,9 @@ otherwise open `skills/<name>/SKILL.md` in this plugin and follow it).
 
 ## On finish
 
-Present `08-prd.md`, and suggest next moves: hand the PRD to Claude Code or
+Present `08-prd.md`. `pm-prd` itself asks whether to continue into the Lean
+PMF search (steps 9–11) — follow its wrap-up rather than repeating the
+question here. If the PM declines or after step 11 completes, suggest next
+moves: hand the PRD (and, if run, `11-pmf-signal.md`) to Claude Code or
 Cursor to build the MVP, or share it with stakeholders. Keep the wrap-up
 short — the detail lives in the docs.
