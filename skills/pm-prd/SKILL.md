@@ -58,8 +58,9 @@ question: "Want to run a Lean PMF search next — 3 short steps (Lean Canvas,
 Customer Discovery, PMF Signal) — to validate this against real customers
 before you build?"
 
-- **Yes** → append `- [ ] pm-lean-canvas → 09-lean-canvas.md` (pending) to
-  `00-status.md` and proceed to pm-lean-canvas.
+- **Yes** → proceed directly to pm-lean-canvas. No status line to add here —
+  pm-lean-canvas appends its own `[x]` line on completion, the same as every
+  other step; there's no pending/unchecked line convention in this file.
 - **No** → append `- [x] Lean PMF search declined — proceeded straight to
   build (<YYYY-MM-DD>)` to `00-status.md` (so a later resume can still offer
   it), and suggest next moves: hand the PRD to Claude Code/Cursor to build,
