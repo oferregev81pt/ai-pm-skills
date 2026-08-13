@@ -8,7 +8,9 @@ description: Use when designing customer discovery interviews to test problem/cu
 Two passes, possibly in separate conversations: **prep** (design the
 interviews) and **synthesis** (make sense of what came back). Detect which
 pass applies from what exists in `10-customer-discovery.md` and what the PM
-brings.
+brings. If the doc already has a completed `## Synthesis` and the PM isn't
+asking to redo the script or bringing new notes, there's nothing to do —
+say so and point to step 11 (pm-pmf-signal) as the next step.
 
 ## Prerequisites
 
@@ -40,6 +42,12 @@ Draft:
 Iterate until approved.
 
 ### Output — save to `product/<idea-slug>/10-customer-discovery.md`
+
+If `## Synthesis` already has real content (a prior synthesis pass ran),
+redoing the script means replacing ONLY `## Interview guide` — never
+overwrite an existing `## Synthesis` section back to "pending." A completed
+synthesis is downstream input to step 11; discarding it silently is a data
+loss, not a fresh start.
 
 ```
 # Customer Discovery — <idea title>
