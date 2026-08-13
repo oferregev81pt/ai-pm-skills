@@ -60,6 +60,7 @@ Iterate until approved.
 ## Unfair Advantage
 
 ## Open questions
+<unresolved items from this step — pm-prd collects these; write "none" if none>
 ```
 
 Append to `00-status.md`: `- [x] pm-lean-canvas → 09-lean-canvas.md — <one-liner> (<YYYY-MM-DD>)`
