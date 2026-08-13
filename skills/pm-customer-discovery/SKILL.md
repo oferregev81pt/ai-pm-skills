@@ -10,7 +10,10 @@ interviews) and **synthesis** (make sense of what came back). Detect which
 pass applies from what exists in `10-customer-discovery.md` and what the PM
 brings. If the doc already has a completed `## Synthesis` and the PM isn't
 asking to redo the script or bringing new notes, there's nothing to do —
-say so and point to step 11 (pm-pmf-signal) as the next step.
+say so and point to step 11 (pm-pmf-signal) as the next step. If the PM
+brings NEW notes after a completed `## Synthesis` (e.g. a second round of
+interviews), treat it as another Pass 2 run: re-draft the Synthesis section
+from the combined evidence (old + new notes), not just the new batch alone.
 
 ## Prerequisites
 
