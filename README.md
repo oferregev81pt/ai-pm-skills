@@ -159,3 +159,7 @@ Or copy the skill folders into your tool's skills directory (e.g.
 
 Product-sense frameworks adapted from *Cracking the PM Interview* by Gayle
 Laakmann McDowell and Jackie Bavaro. MIT license.
+
+---
+
+Part of [The AI PM Hub](https://theaipmhub.com) — AI skills for product managers, by Ofer Regev.
