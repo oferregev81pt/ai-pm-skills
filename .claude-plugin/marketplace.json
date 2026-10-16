@@ -1,10 +1,12 @@
 {
   "name": "ai-pm-skills",
-  "owner": { "name": "Ofer Regev" },
+  "owner": {
+    "name": "Ofer Regev"
+  },
   "plugins": [
     {
       "name": "idea-to-mvp",
-      "source": { "source": "github", "repo": "oferregev81pt/ai-pm-skills" },
+      "source": "./plugins/idea-to-mvp",
       "description": "Idea → users → use cases → alternatives → solutions → MVP cut → validation → lean PRD, then an optional Lean PMF search (canvas → customer discovery → PMF signal). Interactive product-sense flow for PMs."
     },
     {
@@ -12,5 +14,6 @@
       "source": "./plugins/roadmap-prioritizer",
       "description": "Turn an existing codebase into a prioritized roadmap: status per feature from the code, fresh opportunities from structured ideation, a prioritization model chosen to fit the situation (RICE, MoSCoW, Now/Next/Later or Kano), and an interactive scoring conversation in plain language."
     }
-  ]
+  ],
+  "description": "Product-management skills for AI coding agents: from idea to MVP requirements doc and Lean PMF search, plus a codebase-to-roadmap prioritizer."
 }

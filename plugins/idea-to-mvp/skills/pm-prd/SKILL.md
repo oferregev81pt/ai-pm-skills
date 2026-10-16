@@ -1,6 +1,6 @@
 ---
 name: pm-prd
-description: Use when assembling a final lean PRD / MVP requirements doc from completed discovery docs, or when a PM asks to "write the PRD" after idea-to-mvp steps (product/<slug>/ docs 01–07 exist, fully or partly). Step 8 of the idea-to-mvp flow — core steps end here; an optional Lean PMF search (steps 9–11) can follow.
+description: Use when assembling a final lean PRD / MVP requirements doc from completed discovery docs, or when a PM asks to "write the PRD" after idea-to-mvp steps (product/[slug]/ docs 01–07 exist, fully or partly). Step 8 of the idea-to-mvp flow — core steps end here; an optional Lean PMF search (steps 9–11) can follow.
 ---
 
 # Step 8 — The Lean PRD

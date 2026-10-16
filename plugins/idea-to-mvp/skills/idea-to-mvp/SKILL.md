@@ -1,6 +1,6 @@
 ---
 name: idea-to-mvp
-description: Use when a product manager has a product idea and wants to turn it into an MVP requirements doc — e.g. "I have an idea for…", "help me scope/spec an MVP", "write a PRD for…", "validate this product idea" — or wants to resume a flow (a product/<slug>/00-status.md exists in the workspace).
+description: Use when a product manager has a product idea and wants to turn it into an MVP requirements doc — e.g. "I have an idea for…", "help me scope/spec an MVP", "write a PRD for…", "validate this product idea" — or wants to resume a flow (a product/[slug]/00-status.md exists in the workspace).
 ---
 
 # Idea to MVP — Orchestrator

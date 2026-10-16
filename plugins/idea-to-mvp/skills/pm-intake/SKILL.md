@@ -1,6 +1,6 @@
 ---
 name: pm-intake
-description: Use when a product manager starts exploring a new product idea that hasn't been scoped yet (no product/<slug>/ folder exists for it), or asks to kick off idea discovery. Step 1 of the idea-to-mvp flow.
+description: Use when a product manager starts exploring a new product idea that hasn't been scoped yet (no product/[slug]/ folder exists for it), or asks to kick off idea discovery. Step 1 of the idea-to-mvp flow.
 ---
 
 # Step 1 — Intake & Clarifying Questions

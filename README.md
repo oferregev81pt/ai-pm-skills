@@ -152,7 +152,7 @@ npx skills add oferregev81pt/ai-pm-skills
 Or copy the skill folders into your tool's skills directory (e.g.
 `.cursor/skills/` or `.agents/skills/` in your project):
 
-- idea-to-mvp steps: `skills/`
+- idea-to-mvp steps: `plugins/idea-to-mvp/skills/`
 - roadmap-prioritizer: `plugins/roadmap-prioritizer/skills/`
 
 ## Credits & license
