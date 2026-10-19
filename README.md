@@ -141,6 +141,12 @@ path.
 
 ---
 
+## Security & transparency
+
+Both plugins are **instructions only**: Markdown skill files, no executable code, no hooks, no MCP servers, and no network access or telemetry. They never request credentials. The only files produced are Markdown docs written to your workspace (`product/<slug>/` for idea-to-mvp, a roadmap doc for roadmap-prioritizer). Details per plugin: [idea-to-mvp](plugins/idea-to-mvp/SECURITY.md), [roadmap-prioritizer](plugins/roadmap-prioritizer/SECURITY.md).
+
+---
+
 ## Other tools
 
 ### Cursor and other Agent Skills-compatible tools

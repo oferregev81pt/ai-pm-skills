@@ -7,13 +7,18 @@
     {
       "name": "idea-to-mvp",
       "source": "./plugins/idea-to-mvp",
-      "description": "Idea → users → use cases → alternatives → solutions → MVP cut → validation → lean PRD, then an optional Lean PMF search (canvas → customer discovery → PMF signal). Interactive product-sense flow for PMs."
+      "description": "Idea → users → use cases → alternatives → solutions → MVP cut → validation → lean PRD, then an optional Lean PMF search (canvas → customer discovery → PMF signal). Interactive product-sense flow for PMs.",
+      "license": "MIT",
+      "homepage": "https://github.com/oferregev81pt/ai-pm-skills/tree/main/plugins/idea-to-mvp"
     },
     {
       "name": "roadmap-prioritizer",
       "source": "./plugins/roadmap-prioritizer",
-      "description": "Turn an existing codebase into a prioritized roadmap: status per feature from the code, fresh opportunities from structured ideation, a prioritization model chosen to fit the situation (RICE, MoSCoW, Now/Next/Later or Kano), and an interactive scoring conversation in plain language."
+      "description": "Turn an existing codebase into a prioritized roadmap: status per feature from the code, fresh opportunities from structured ideation, a prioritization model chosen to fit the situation (RICE, MoSCoW, Now/Next/Later or Kano), and an interactive scoring conversation in plain language.",
+      "license": "MIT",
+      "homepage": "https://github.com/oferregev81pt/ai-pm-skills/tree/main/plugins/roadmap-prioritizer"
     }
   ],
-  "description": "Product-management skills for AI coding agents: from idea to MVP requirements doc and Lean PMF search, plus a codebase-to-roadmap prioritizer."
+  "description": "Product-management skills for AI coding agents: from idea to MVP requirements doc and Lean PMF search, plus a codebase-to-roadmap prioritizer.",
+  "homepage": "https://github.com/oferregev81pt/ai-pm-skills"
 }
