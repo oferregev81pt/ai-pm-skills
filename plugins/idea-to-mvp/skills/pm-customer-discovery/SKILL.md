@@ -5,14 +5,14 @@ description: Use when designing customer discovery interviews to test problem/cu
 
 # Step 10 — Customer Discovery
 
-Two passes, possibly in separate conversations: **prep** (design the
+Two phases, possibly in separate conversations: **prep** (design the
 interviews) and **synthesis** (make sense of what came back). Detect which
-pass applies from what exists in `10-customer-discovery.md` and what the PM
+phase applies from what exists in `10-customer-discovery.md` and what the PM
 brings. If the doc already has a completed `## Synthesis` and the PM isn't
 asking to redo the script or bringing new notes, there's nothing to do —
 say so and point to step 11 (pm-pmf-signal) as the next step. If the PM
 brings NEW notes after a completed `## Synthesis` (e.g. a second round of
-interviews), treat it as another Pass 2 run: re-draft the Synthesis section
+interviews), treat it as another Phase 2 run: re-draft the Synthesis section
 from the combined evidence (old + new notes), not just the new batch alone.
 
 ## Prerequisites
@@ -20,7 +20,7 @@ from the combined evidence (old + new notes), not just the new batch alone.
 Read `00-status.md` and `09-lean-canvas.md`. Missing → offer to run
 pm-lean-canvas first, or accept an equivalent doc.
 
-## Pass 1: Prep (no `10-customer-discovery.md` yet, or PM wants to redo the script)
+## Phase 1: Prep (no `10-customer-discovery.md` yet, or PM wants to redo the script)
 
 ### Drafting instructions (dispatch to a subagent when available, else inline)
 
@@ -46,7 +46,7 @@ Iterate until approved.
 
 ### Output — save to `product/<idea-slug>/10-customer-discovery.md`
 
-If `## Synthesis` already has real content (a prior synthesis pass ran),
+If `## Synthesis` already has real content (a prior synthesis run happened),
 redoing the script means replacing ONLY `## Interview guide` — never
 overwrite an existing `## Synthesis` section back to "pending." A completed
 synthesis is downstream input to step 11; discarding it silently is a data
@@ -70,7 +70,7 @@ Append to `00-status.md`: `- [x] pm-customer-discovery (prep) → 10-customer-di
 Tell the PM: go run the interviews, then come back with your notes for
 synthesis.
 
-## Pass 2: Synthesis (`10-customer-discovery.md` exists with `## Synthesis` still pending, and the PM brings interview notes)
+## Phase 2: Synthesis (`10-customer-discovery.md` exists with `## Synthesis` still pending, and the PM brings interview notes)
 
 Never synthesize without real notes — if the PM says "just write it up," ask
 for the actual notes or quotes first.

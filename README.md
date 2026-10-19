@@ -49,7 +49,7 @@ and never depends on chat memory.
 | 10 | `pm-customer-discovery` | What do real customers say when we test the problem and solution? | `10-customer-discovery.md` |
 | 11 | `pm-pmf-signal` | How will we know we've reached PMF, and what's the go/no-go threshold? | `11-pmf-signal.md` |
 
-Step 10 runs in two passes: it drafts the interview guide first, then — once
+Step 10 runs in two phases: it drafts the interview guide first, then — once
 you've actually gone and talked to customers, possibly in a later session —
 synthesizes the notes you bring back.
 

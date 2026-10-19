@@ -13,7 +13,6 @@
     "product-sense",
     "requirements"
   ],
-  "repository": "https://github.com/oferregev81pt/ai-pm-skills",
   "license": "MIT",
   "icon": "./.claude-plugin/icon.png"
 }
