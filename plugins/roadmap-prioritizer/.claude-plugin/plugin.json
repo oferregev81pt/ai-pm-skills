@@ -16,7 +16,7 @@
     "backlog",
     "ideation"
   ],
-  "homepage": "https://github.com/oferregev81pt/ai-pm-skills/tree/main/plugins/roadmap-prioritizer",
   "repository": "https://github.com/oferregev81pt/ai-pm-skills",
-  "license": "MIT"
+  "license": "MIT",
+  "icon": "./.claude-plugin/icon.png"
 }

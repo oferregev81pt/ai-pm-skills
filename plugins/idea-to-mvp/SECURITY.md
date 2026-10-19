@@ -8,7 +8,7 @@
 | Hooks? | None. No `hooks/` directory, no lifecycle hooks. |
 | MCP servers? | None. No `.mcp.json`. |
 | Network access? | None. No URLs, API calls, telemetry, or downloads. |
-| Credentials or secrets? | None requested, read, or stored. |
+| Sign-in data or keys? | Never requested, read, or stored. |
 | Tool restrictions? | Skills do not request extra permissions; the agent uses only the tools your session already allows. |
 | Files written? | Only Markdown docs in the user's workspace, shown to the user as they are produced. |
 

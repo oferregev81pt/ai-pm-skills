@@ -13,7 +13,7 @@
     "product-sense",
     "requirements"
   ],
-  "homepage": "https://github.com/oferregev81pt/ai-pm-skills/tree/main/plugins/idea-to-mvp",
   "repository": "https://github.com/oferregev81pt/ai-pm-skills",
-  "license": "MIT"
+  "license": "MIT",
+  "icon": "./.claude-plugin/icon.png"
 }
