@@ -16,6 +16,5 @@
     "backlog",
     "ideation"
   ],
-  "license": "MIT",
-  "icon": "./.claude-plugin/icon.png"
+  "license": "MIT"
 }
